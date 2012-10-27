@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="3ffef69c-8391-4574-afe0-7d70310ba7f6" solutionId="3ffef69c-8391-4574-afe0-7d70310ba7f6" resetWebServer="false" name="HeraDMS" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="HeraDMS.ServerControls.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\HeraDMS.ServerControls\HeraDMS.ServerControls.csproj" />
+    <projectOutputAssembly location="HeraDMS.Entity.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\HeraDMS.Entity\HeraDMS.Entity.csproj" />
+    <projectOutputAssembly location="HeraDMS.Core.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\HeraDMS.Core\HeraDMS.Core.csproj" />
+    <projectOutputAssembly location="HeraDMS.DAL.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\HeraDMS.DAL\HeraDMS.DAL.csproj" />
+    <projectOutputAssembly location="HeraDMS.BLL.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\HeraDMS.BLL\HeraDMS.BLL.csproj" />
+    <customAssembly location="Ionic.Zip.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\lib\NPOI\.net 2.0\Ionic.Zip.dll" />
+    <customAssembly location="NPOI.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\lib\NPOI\.net 2.0\NPOI.dll" />
+    <customAssembly location="ICSharpCode.SharpZipLib.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\lib\SharpZipLib\net-20\ICSharpCode.SharpZipLib.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="f6239d40-3b98-4eda-8345-d836b03941de" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="910811fc-2e89-4042-978b-8594484d8d08" />
+  </projectItems>
+</package>

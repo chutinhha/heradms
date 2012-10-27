@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="Ribbon.Documents.Comment"
+                Location="CommandUI.Ribbon">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Documents.Groups._children">
+          <Group Id="Ribbon.Documents.Comment"
+                 Title="评论"
+                 Description="评论"
+                 Sequence="110"
+                 Template="Ribbon.Templates.CommentTemplate">
+            <Controls Id="Ribbon.Documents.Comment.Controls">
+              <Button Id="Ribbon.Documents.Comment.MyButton"
+                      LabelText="评论"
+                      TemplateAlias="o1"
+                      Sequence="15"
+                      Image32by32="/_layouts/HeraDMSSite/Images/ApplyDocumentPrefixRibbon/32x32Placeholder.png"
+                      Command="CommentCommand" />
+            </Controls>
+          </Group>
+        </CommandUIDefinition>
+        <CommandUIDefinition Location="Ribbon.Documents.Scaling._children">
+          <MaxSize Id="Ribbon.Documents.Scaling.Comment.MaxSize"
+                   GroupId="Ribbon.Documents.Comment"
+                   Size="MsdnHorizontal"
+                   Sequence="15" />
+        </CommandUIDefinition>
+        <CommandUIDefinition Location="Ribbon.Templates._children">
+          <GroupTemplate Id="Ribbon.Templates.CommentTemplate">
+            <Layout Title="MsdnHorizontal">
+              <Section Type="OneRow">
+                <Row>
+                  <ControlRef DisplayMode="Large" TemplateAlias="o1" />
+                  <ControlRef DisplayMode="Large" TemplateAlias="o2" />
+                  <ControlRef DisplayMode="Large" TemplateAlias="o3" />
+                </Row>
+              </Section>
+            </Layout>
+            <Layout Title="MsdnVertical">
+              <Section Type="ThreeRow">
+                <Row>
+                  <ControlRef DisplayMode="Medium" TemplateAlias="o1" />
+                </Row>
+                <Row>
+                  <ControlRef DisplayMode="Medium" TemplateAlias="o2" />
+                </Row>
+                <Row>
+                  <ControlRef DisplayMode="Medium" TemplateAlias="o3" />
+                </Row>
+              </Section>
+            </Layout>
+            <Layout Title="MsdnVerticalTextOnly">
+              <Section Type="ThreeRow">
+                <Row>
+                  <ControlRef DisplayMode="Menu" TemplateAlias="o1" />
+                </Row>
+                <Row>
+                  <ControlRef DisplayMode="Menu" TemplateAlias="o2" />
+                </Row>
+                <Row>
+                  <ControlRef DisplayMode="Menu" TemplateAlias="o3" />
+                </Row>
+              </Section>
+            </Layout>
+          </GroupTemplate>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+
+      <CommandUIHandlers>
+        <CommandUIHandler Command="CommentCommand"
+                          CommandAction="javascript:
+                          var selectedItemIds = '';
+                            var selectedItemIndex;
+                            var selectedItems = SP.ListOperation.Selection.getSelectedItems();
+                            for (selectedItemIndex in selectedItems){
+                              selectedItemIds =selectedItems[selectedItemIndex].id;
+                            }
+                          var options = SP.UI.$create_DialogOptions();options.title = '评论';options.width = 800;options.height = 450;options.url = '/_layouts/Pages/Comment/CommentList.aspx?itemID=' + selectedItemIds + '&amp;listID=' + SP.ListOperation.Selection.getSelectedList();
+        SP.UI.ModalDialog.showModalDialog(options);"
+                          EnabledScript="javascript:
+                            function checkIsEnabled(){
+                              // check items selected
+                              var selectedItems = SP.ListOperation.Selection.getSelectedItems();
+                              var count = CountDictionary(selectedItems);
+                              return (count == 1);
+                            }; 
+                                          
+                            checkIsEnabled();"
+                          />
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+</Elements>

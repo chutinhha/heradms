@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="Ribbon.Documents.MyFavorites"
+                Location="CommandUI.Ribbon">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Documents.Groups._children">
+          <Group Id="Ribbon.Documents.MyFavorites"
+                 Title="收藏"
+                 Description="收藏"
+                 Sequence="120"
+                 Template="Ribbon.Templates.MyFavoritesTemplate">
+            <Controls Id="Ribbon.Documents.MyFavorites.Controls">
+              <Button Id="Ribbon.Documents.MyFavorites.MyButton"
+                      LabelText="收藏"
+                      TemplateAlias="o1"
+                      Sequence="15"
+                      Image32by32="/_layouts/HeraDMSSite/Images/ApplyDocumentPrefixRibbon/32x32Placeholder.png"
+                      Command="MyFavoritesCommand" />
+            </Controls>
+          </Group>
+        </CommandUIDefinition>
+        <CommandUIDefinition Location="Ribbon.Documents.Scaling._children">
+          <MaxSize Id="Ribbon.Documents.Scaling.MyFavorites.MaxSize"
+                   GroupId="Ribbon.Documents.MyFavorites"
+                   Size="MsdnHorizontal"
+                   Sequence="15" />
+        </CommandUIDefinition>
+        <CommandUIDefinition Location="Ribbon.Templates._children">
+          <GroupTemplate Id="Ribbon.Templates.MyFavoritesTemplate">
+            <Layout Title="MsdnHorizontal">
+              <Section Type="OneRow">
+                <Row>
+                  <ControlRef DisplayMode="Large" TemplateAlias="o1" />
+                  <ControlRef DisplayMode="Large" TemplateAlias="o2" />
+                  <ControlRef DisplayMode="Large" TemplateAlias="o3" />
+                </Row>
+              </Section>
+            </Layout>
+            <Layout Title="MsdnVertical">
+              <Section Type="ThreeRow">
+                <Row>
+                  <ControlRef DisplayMode="Medium" TemplateAlias="o1" />
+                </Row>
+                <Row>
+                  <ControlRef DisplayMode="Medium" TemplateAlias="o2" />
+                </Row>
+                <Row>
+                  <ControlRef DisplayMode="Medium" TemplateAlias="o3" />
+                </Row>
+              </Section>
+            </Layout>
+            <Layout Title="MsdnVerticalTextOnly">
+              <Section Type="ThreeRow">
+                <Row>
+                  <ControlRef DisplayMode="Menu" TemplateAlias="o1" />
+                </Row>
+                <Row>
+                  <ControlRef DisplayMode="Menu" TemplateAlias="o2" />
+                </Row>
+                <Row>
+                  <ControlRef DisplayMode="Menu" TemplateAlias="o3" />
+                </Row>
+              </Section>
+            </Layout>
+          </GroupTemplate>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+
+      <CommandUIHandlers>
+        <CommandUIHandler Command="MyFavoritesCommand"
+                          CommandAction="javascript:
+                            var selectedItems = SP.ListOperation.Selection.getSelectedItems();
+                            var selectedItemIds = '';
+                            var selectedItemIndex;
+                            for (selectedItemIndex in selectedItems){
+                              selectedItemIds += '|' + selectedItems[selectedItemIndex].id;
+                            }
+                            //alert(selectedItemIds);
+                            $.get(
+                                        '/_layouts/Pages/MyFavorites/MyFavoritesOperation.aspx',{
+                                            listid: SP.ListOperation.Selection.getSelectedList(),
+                                            selectedItems: selectedItemIds,
+                                        },function(data,state){
+                                            //这里显示返回的状态
+                                            alert('收藏成功！');
+                                        }
+                                    )"
+                          EnabledScript="javascript:
+                            function checkIsEnabled(){
+                              // check items selected
+                              var selectedItems = SP.ListOperation.Selection.getSelectedItems();
+                              var count = CountDictionary(selectedItems);
+                              return (count > 0);
+                            }; 
+                                          
+                            checkIsEnabled();"
+                          />
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+  <CustomAction Id="Ribbon.Documents.Actions.Scripts"
+                Location="ScriptLink"
+                ScriptSrc="/_layouts/JS/jquery-1.4.1-vsdoc.js"
+                />
+  <CustomAction Id="Ribbon.Documents.Actions.Scripts"
+              Location="ScriptLink"
+              ScriptSrc="/_layouts/JS/jquery-1.4.1.js"
+                />
+  <CustomAction Id="Ribbon.Documents.Actions.Scripts"
+             Location="ScriptLink"
+             ScriptSrc="/_layouts/JS/jquery-1.4.1.min.js"
+                />
+</Elements>

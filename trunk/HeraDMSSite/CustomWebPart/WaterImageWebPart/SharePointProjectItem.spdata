@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="WaterImageWebPartUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="WaterImageWebPart\" Type="ElementManifest" />
+    <ProjectItemFile Source="WaterImageWebPart.webpart" Target="WaterImageWebPart\" Type="ElementFile" />
+    <ProjectItemFile Source="WaterImageWebPartUserControl.ascx" Target="CONTROLTEMPLATES\HeraDMS.CustomWebPart\WaterImageWebPart\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="HeraDMS.CustomWebPart.WaterImageWebPart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

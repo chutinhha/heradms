@@ -1,0 +1,471 @@
+﻿body
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	font: 10pt Verdana, Arial, Helvetica, sans-serif;
+	font-family: "Trebuchet MS";
+	color: #000000;
+	padding-top: 0px;
+	text-align: center;
+}
+
+table
+{
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+	border-bottom-style:none;
+}
+table.large
+{
+	font-size:18px;
+}
+td.large
+{
+	font-size:18px;
+}
+a.large:link
+{
+	color:Blue;
+}
+a.large:visited
+{
+	color: #0D214F;
+}
+a.large:hover
+{
+	color: #CC0000;
+}
+
+td
+{
+	font-size: 12px;
+	text-decoration: none;
+	line-height: 20px;
+	color: #1E3C64;
+}
+
+p, li, input, select, textarea
+{
+	font-size: 12px;
+    height: 20px;
+}
+
+form
+{
+	margin: 0px;
+	padding: 0px;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	clip: rect(0px 0px 0px 0px);
+}
+
+form
+{
+	margin: 0px;
+	padding: 0px;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	clip: rect(0px 0px 0px 0px);
+}
+a:link
+{
+	text-decoration: none;
+	color: #0D214F;
+}
+a:visited
+{
+	text-decoration: none;
+	color: #0D214F;
+}
+a:hover
+{
+	color: #CC0000;
+	right: 0px;
+	position: relative;
+	top: 1px;
+	left: 1px;
+	text-decoration: underline;
+}
+.BigTB
+{
+	background-color: #CBEFFC;
+	border: 1px solid #525252;
+	background-color: White;
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+	padding: 20px;
+}
+.MidTB
+{
+	background-color: #CBEFFC;
+	border: 1px solid #525252;
+	background-color: White;
+	table-layout: auto;
+	border-collapse: collapse;
+	width: 100%;
+}
+.td1
+{
+	font: 9pt, Monospace;
+	padding: 0px;
+	margin: 0;
+	border: inset 1px #7B7B7B;
+	line-height: 22px;
+	text-align: left;
+}
+.tdcenter
+{
+	font: 9pt, Monospace;
+	padding: 2px;
+	margin: 0;
+	border: inset 1px #7B7B7B;
+	line-height: 22px;
+	text-align: center;
+}
+/* A button style like <a> style*/
+.abtn
+{
+	border: solid 0px white;
+	background-color: White;
+}
+.dllPage
+{
+	width: 45px;
+	border: solid 1px #cccccc;
+}
+.inputNoSee
+{
+	visibility: hidden;
+	width: 1px;
+}
+.ImageStyle
+{
+	width: 10px;
+	border: solid 0px #ffffff;
+	background-color: White;
+	cursor: hand;
+}
+.w:link
+{
+	text-decoration: none;
+	color: #ffffff;
+	font-family: "宋体";
+	font-weight: bold;
+}
+.w:visited
+{
+	text-decoration: none;
+	color: #ffffff;
+	font-family: "宋体";
+	font-weight: bold;
+}
+.w:hover
+{
+	color: #FCFF01;
+	right: 0px;
+	position: relative;
+	top: 1px;
+	left: 1px;
+	text-decoration: underline;
+	font-family: "宋体";
+	font-weight: bold;
+}
+.blue:link
+{
+	text-decoration: none;
+	color: #023DD5;
+	font-family: "宋体";
+	text-decoration: underline;
+}
+.blue:visited
+{
+	text-decoration: none;
+	color: #023DD5;
+	font-family: "宋体";
+	text-decoration: underline;
+}
+.blue:hover
+{
+	color: #cc0000;
+	right: 0px;
+	position: relative;
+	top: 1px;
+	left: 1px;
+	text-decoration: underline;
+	font-family: "宋体";
+}
+.tblCommon
+{
+	background-color: #F2F8FF;
+	font-size: 12px;
+	line-height: 20px;
+	height: 20px;
+}
+
+.tblAlternate
+{
+	background-color: #ffffff;
+	font-size: 12px;
+	line-height: 20px;
+	height: 20px;
+}
+.tblRowHead1
+{
+	background-color: #C3D6EF;
+	color: #000000;
+	font-size: 13px;
+	line-height: 20px;
+	height: 20px;
+	font-weight: bold;
+}
+.fontHead
+{
+	background-color: #C3D6EF;
+	color: #013D9F;
+	font-size: 14px;
+	font-weight: bold;
+}
+.fontHead1
+{
+	background-color: #507CD1;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+}
+.main_tab
+{
+	background-color: #DEDEE9;
+	color: #000000;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.main_topchartlb
+{
+	border: 1px solid #787A9B;
+}
+.maintableborder
+{
+	border: 1px solid #9CA8BC;
+	bgcolor: #FFFFFF;
+}
+.maintableborder
+{
+	border: 1px solid #9CA8BC;
+	bgcolor: #FFFFFF;
+}
+.btnOut
+{
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr= '#CDDCF6' , endColorStr= '#134CAA' , gradientType= '0' );
+	border-style: solid;
+	border-color: #C6D4EB #8CA5C9 #8CA5C9 #C6D4EB;
+	border-width: 1px;
+	padding: 1 0 0 0;
+	margin-left: 3px;
+	color: #ffffff;
+	height: 20px;
+}
+.btnIn
+{
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr= '#47A2EF' , endColorStr= '#CDDCF6' , gradientType= '1' );
+	border-style: solid;
+	border-color: #8CA5C9 #C6D4EB #C6D4EB #8CA5C9;
+	border-width: 1px;
+	padding: 1 0 0 0;
+	margin-left: 3px;
+	color: #ffffff;
+	height: 20px;
+}
+
+.btn1_mouseout
+{
+	border-right: #2C59AA 1px solid;
+	height: 22px;
+	padding-right: 2px;
+	border-top: #2C59AA 1px solid;
+	padding-left: 2px;
+	font-size: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#3684DB);
+	border-left: #2C59AA 1px solid;
+	cursor: hand;
+	color: black;
+	padding-top: 1px;
+	border-bottom: #2C59AA 1px solid;
+}
+.btn1_mouseover
+{
+	border-right: #2C59AA 1px solid;
+	height: 22px;
+	padding-right: 2px;
+	border-top: #2C59AA 1px solid;
+	padding-left: 2px;
+	font-size: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#D7E7FA);
+	border-left: #2C59AA 1px solid;
+	cursor: hand;
+	color: black;
+	padding-top: 1px;
+	border-bottom: #2C59AA 1px solid;
+}
+.btn1_mousedown
+{
+	border-right: #FFE400 1px solid;
+	height: 22px;
+	padding-right: 2px;
+	border-top: #FFE400 1px solid;
+	padding-left: 2px;
+	font-size: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#3684DB);
+	border-left: #FFE400 1px solid;
+	cursor: hand;
+	color: black;
+	padding-top: 1px;
+	border-bottom: #FFE400 1px solid;
+}
+.btn1_mouseup
+{
+	border-right: #2C59AA 1px solid;
+	height: 22px;
+	padding-right: 2px;
+	border-top: #2C59AA 1px solid;
+	padding-left: 2px;
+	font-size: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#3684DB);
+	border-left: #2C59AA 1px solid;
+	cursor: hand;
+	color: black;
+	padding-top: 1px;
+	border-bottom: #2C59AA 1px solid;
+}
+.btn3_mouseout
+{
+	border-right: #2C59AA 1px solid;
+	height: 22px;
+	padding-right: 2px;
+	border-top: #2C59AA 1px solid;
+	padding-left: 2px;
+	font-size: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+	border-left: #2C59AA 1px solid;
+	cursor: hand;
+	color: black;
+	padding-top: 1px;
+	border-bottom: #2C59AA 1px solid;
+}
+.btn3_mouseover
+{
+	border-right: #2C59AA 1px solid;
+	height: 22px;
+	padding-right: 2px;
+	border-top: #2C59AA 1px solid;
+	padding-left: 2px;
+	font-size: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#D7E7FA);
+	border-left: #2C59AA 1px solid;
+	cursor: hand;
+	color: black;
+	padding-top: 1px;
+	border-bottom: #2C59AA 1px solid;
+}
+.btn3_mousedown
+{
+	border-right: #FFE400 1px solid;
+	height: 22px;
+	padding-right:  2px;
+	border-top: #FFE400 1px solid;
+	padding-left: 2px;
+	font-size: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+	border-left: #FFE400 1px solid;
+	cursor: hand;
+	color: black;
+	padding-top: 1px;
+	border-bottom: #FFE400 1px solid;
+}
+.btn3_mouseup
+{
+	border-right: #2C59AA 1px solid;
+	height: 22px;
+	padding-right: 2px;
+	border-top: #2C59AA 1px solid;
+	padding-left: 2px;
+	font-size: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+	border-left: #2C59AA 1px solid;
+	cursor: hand;
+	color: black;
+	padding-top: 1px;
+	border-bottom: #2C59AA 1px solid;
+}
+.blue_rounded
+{
+	padding: 2px;
+	border: 0px;
+	background-color: lightblue;
+	border-radius: 5px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+.green_rounded
+{
+	width: 250px;
+	padding: 5px;
+	border: 0px;
+	background-color: lightgreen;
+	border-radius: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	text-shadow: 3px 3px grey;
+}
+.pictureFrame
+{
+	border-image: url( 'frame.gif' ) 17%;
+	border-width: 20px;
+	border-radius: 5px;
+	width: 250px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+.dottedField
+{
+	border: 6px dotted green;
+	font-weight: bold;
+}
+.grooveField
+{
+	border: 8px groove purple;
+	font-weight: bold;
+}
+.apple1
+{
+	background-image: url( 'apple2.gif' );
+}
+.trans
+{
+	background-color: transparent;
+	align: center;
+}
+.fancy
+{
+	font-size: 36px;
+	font-family: SynchroLET;
+	color: orange;
+	text-transform: capitalize;
+	border-width: 5px 30px 10px 30px;
+	padding: 0px;
+	border-image: url(fancyborder.png) 5 30 10 30;
+}
+
