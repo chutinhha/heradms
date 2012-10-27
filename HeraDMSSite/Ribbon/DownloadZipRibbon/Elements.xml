@@ -9,7 +9,7 @@
                   Sequence="15"
                   Image16by16="/_layouts/HeraDMSSite/Images/DownloadZipRibbon/zip_16x16.png"
                   Image32by32="/_layouts/HeraDMSSite/Images/DownloadZipRibbon/zip_32x32.png"
-                  Description="Download zip" LabelText="Download as Zip"
+                  Description="$Resources:DownloadZip_Desc" LabelText="$Resources:DownloadZip_Label;"
                   TemplateAlias="o1"/>
         </CommandUIDefinition>
       </CommandUIDefinitions>

@@ -326,7 +326,12 @@
     </Content>
     <Content Include="Ribbon\MyFavoritesRibbon\Elements.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\HeraDMSFeature\Resources.zh-CN.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\HeraDMSFeature\Resources.en-US.resx" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
 </Project>
