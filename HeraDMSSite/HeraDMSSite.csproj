@@ -233,7 +233,9 @@
     <None Include="Ribbon\MyFavoritesRibbon\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9562eedf-df52-47bd-a29e-0ca895d5d740}</SharePointProjectItemId>
     </None>
-    <EntityDeploy Include="web.config" />
+    <EntityDeploy Include="web.config">
+      <SubType>Designer</SubType>
+    </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HeraDMS.BLL\HeraDMS.BLL.csproj">
