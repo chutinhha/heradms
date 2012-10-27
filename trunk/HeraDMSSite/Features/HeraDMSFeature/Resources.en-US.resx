@@ -123,4 +123,10 @@
   <data name="DownloadZip_Label" xml:space="preserve">
     <value>Download as Zip</value>
   </data>
+  <data name="HearDMSFeature_Desc" xml:space="preserve">
+    <value>Hera Document Management System based SharePoint Server</value>
+  </data>
+  <data name="HearDMSFeature_Title" xml:space="preserve">
+    <value>Hera Document Management System</value>
+  </data>
 </root>
