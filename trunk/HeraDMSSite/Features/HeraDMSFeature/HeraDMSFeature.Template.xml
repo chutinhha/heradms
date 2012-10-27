@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/"
+         Id="adb9662c-ddb0-4d2d-96a4-8783ce5a6396"
+         Title="$Resources:HearDMSFeature_Title;"
+         Description="$Resources:HearDMSFeature_Desc;"
+         Version="0.1.1.0"
+         Scope="Site"
+         Creator="Hollis Yao"
+         SolutionId="3ffef69c-8391-4574-afe0-7d70310ba7f6"
+>
 </Feature>
