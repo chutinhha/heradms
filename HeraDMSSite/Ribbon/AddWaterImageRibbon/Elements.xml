@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="Ribbon.Documents.Manage.MyButton"
+                 Location="CommandUI.Ribbon">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition
+          Location="Ribbon.Documents.Manage.Controls._children">
+          <Button Id="Ribbon.Documents.Manage.MyButton"
+            Command="AddWaterCommand"
+            Image32by32="/_layouts/HeraDMSSite/Images/ApplyDocumentPrefixRibbon/32x32Placeholder.png"
+            LabelText="添加水印"
+             Description="对已选择的图片添加水印"
+            Sequence="1"
+            TemplateAlias="o1" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler
+          Command="AddWaterCommand"
+          CommandAction="javascript:
+                         var selectedItems = SP.ListOperation.Selection.getSelectedItems();
+                            var selectedItemIds = '';
+                            var selectedItemIndex;
+                            for (selectedItemIndex in selectedItems){
+                              selectedItemIds += '|' + selectedItems[selectedItemIndex].id;
+                            }
+                        var options = SP.UI.$create_DialogOptions();
+                        options.title = '添加图片水印';
+                        options.width = 850;
+                        options.height = 550;
+                        options.url = '/_layouts/Pages/AddWaterImage/AddWaterImage.aspx?listID='+ SP.ListOperation.Selection.getSelectedList()+'&amp;selectedItemIds='+selectedItemIds;
+        SP.UI.ModalDialog.showModalDialog(options);"
+           EnabledScript="javascript:
+                            function checkIsEnabled(){
+                              // check items selected
+                              var selectedItems = SP.ListOperation.Selection.getSelectedItems();
+                              var count = CountDictionary(selectedItems);
+                              return (count > 0);
+                            }; 
+                                          
+                            checkIsEnabled();"/>
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+</Elements>

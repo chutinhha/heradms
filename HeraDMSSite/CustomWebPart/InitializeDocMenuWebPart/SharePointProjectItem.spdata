@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="InitializeDocMenuWebPartUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="InitializeDocMenuWebPart\" Type="ElementManifest" />
+    <ProjectItemFile Source="InitializeDocMenuWebPart.webpart" Target="InitializeDocMenuWebPart\" Type="ElementFile" />
+    <ProjectItemFile Source="InitializeDocMenuWebPartUserControl.ascx" Target="CONTROLTEMPLATES\HeraDMS.CustomWebPart\InitializeDocMenuWebPart\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="HeraDMS.CustomWebPart.InitializeDocMenuWebPart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

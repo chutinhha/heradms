@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="HeraDMSEntityClass">
+  <DataContextMoniker Name="/HeraDMSEntityClassDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d1112ed4-d3dc-4879-a52e-45c509fc2eeb" absoluteBounds="0.75, 0.75, 2, 2.7396264648437505">
+      <DataClassMoniker Name="/HeraDMSEntityClassDataContext/DM_Comment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3bd6ff7b-13ca-4fc9-8e3b-8f84ab3c75b4" absoluteBounds="0.765, 1.21, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b186dd97-3fcf-4b97-9957-0d2457c63cc7" absoluteBounds="3.75, 0.75, 2, 2.7396264648437505">
+      <DataClassMoniker Name="/HeraDMSEntityClassDataContext/DM_MyFavorite" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6a473a0-9785-4eda-8ddf-16616fcb66f2" absoluteBounds="3.765, 1.21, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

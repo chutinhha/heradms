@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9116E4F8-E902-48C7-90A8-DFE7B46FBFB7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HeraDMS</RootNamespace>
+    <AssemblyName>HeraDMS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\lib\SharpZipLib\net-20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\lib\NPOI\.net 2.0\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BusinessData, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.BusinessData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.SecureStoreService, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.Office.SecureStoreService\14.0.0.0__71e9bce111e9429c\Microsoft.Office.SecureStoreService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Linq, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.CommandUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="NPOI">
+      <HintPath>..\lib\NPOI\.net 2.0\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomWebPart\CommentRankingWebPart\CommentRankingWebPart.cs" />
+    <Compile Include="CustomWebPart\CommentRankingWebPart\CommentRankingWebPartUserControl.ascx.cs">
+      <DependentUpon>CommentRankingWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomWebPart\CommentRankingWebPart\CommentRankingWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>CommentRankingWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomWebPart\FavritesRankingWebPart\FavritesRankingWebPart.cs" />
+    <Compile Include="CustomWebPart\FavritesRankingWebPart\FavritesRankingWebPartUserControl.ascx.cs">
+      <DependentUpon>FavritesRankingWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomWebPart\FavritesRankingWebPart\FavritesRankingWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>FavritesRankingWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomWebPart\InitializeDocMenuWebPart\InitializeDocMenuWebPart.cs" />
+    <Compile Include="CustomWebPart\InitializeDocMenuWebPart\InitializeDocMenuWebPartUserControl.ascx.cs">
+      <DependentUpon>InitializeDocMenuWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomWebPart\InitializeDocMenuWebPart\InitializeDocMenuWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>InitializeDocMenuWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomWebPart\MyFavoritesWebPart\MyFavoritesWebPart.cs" />
+    <Compile Include="CustomWebPart\MyFavoritesWebPart\MyFavoritesWebPartUserControl.ascx.cs">
+      <DependentUpon>MyFavoritesWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomWebPart\MyFavoritesWebPart\MyFavoritesWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>MyFavoritesWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomWebPart\ShowLoginPart\ShowLoginPart.cs" />
+    <Compile Include="CustomWebPart\ShowLoginPart\ShowLoginPartUserControl.ascx.cs">
+      <DependentUpon>ShowLoginPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomWebPart\ShowLoginPart\ShowLoginPartUserControl.ascx.designer.cs">
+      <DependentUpon>ShowLoginPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomWebPart\WaterImageWebPart\WaterImageWebPart.cs" />
+    <Compile Include="CustomWebPart\WaterImageWebPart\WaterImageWebPartUserControl.ascx.cs">
+      <DependentUpon>WaterImageWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomWebPart\WaterImageWebPart\WaterImageWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>WaterImageWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventHandlers\DocDelEvent\DocDelEvent.cs" />
+    <Compile Include="Layouts\Common\DownloadFile.aspx.cs">
+      <DependentUpon>DownloadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Common\DownloadFile.aspx.designer.cs">
+      <DependentUpon>DownloadFile.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Helper\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Helper\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Helper\Common.cs" />
+    <Compile Include="Layouts\Helper\Copy of WaterImage.cs" />
+    <Compile Include="Layouts\Helper\NPOIHelper.cs" />
+    <Compile Include="Layouts\Helper\WaterImage.cs" />
+    <Compile Include="Layouts\HeraDMSSite\Pages\DownloadZip.aspx.cs">
+      <DependentUpon>DownloadZip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\HeraDMSSite\Pages\DownloadZip.aspx.designer.cs">
+      <DependentUpon>DownloadZip.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Pages\AddWaterImage\AddWaterImage.aspx.cs">
+      <DependentUpon>AddWaterImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Pages\AddWaterImage\AddWaterImage.aspx.designer.cs">
+      <DependentUpon>AddWaterImage.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Pages\AuditLog\AuditLogList.aspx.cs">
+      <DependentUpon>AuditLogList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Pages\AuditLog\AuditLogList.aspx.designer.cs">
+      <DependentUpon>AuditLogList.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Pages\Comment\CommentList.aspx.cs">
+      <DependentUpon>CommentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Pages\Comment\CommentList.aspx.designer.cs">
+      <DependentUpon>CommentList.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Pages\MyFavorites\MyFavoritesOperation.aspx.cs">
+      <DependentUpon>MyFavoritesOperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Pages\MyFavorites\MyFavoritesOperation.aspx.designer.cs">
+      <DependentUpon>MyFavoritesOperation.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SPHelpler\SPExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CustomWebPart\CommentRankingWebPart\CommentRankingWebPart.webpart" />
+    <None Include="CustomWebPart\CommentRankingWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9a152465-584b-4015-9d91-fd96bb8322e3}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomWebPart\FavritesRankingWebPart\FavritesRankingWebPart.webpart" />
+    <None Include="CustomWebPart\FavritesRankingWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c6129d69-e182-4a06-9eec-4e62906f0592}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomWebPart\InitializeDocMenuWebPart\InitializeDocMenuWebPart.webpart" />
+    <None Include="CustomWebPart\InitializeDocMenuWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{81f02abb-f43a-4a69-8d63-7be87bfa1d2d}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomWebPart\MyFavoritesWebPart\MyFavoritesWebPart.webpart" />
+    <None Include="CustomWebPart\MyFavoritesWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{309e3fd0-8b83-4655-8c5f-e5846d192930}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomWebPart\ShowLoginPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f30d75e7-3929-4ba0-ab58-9a25423d2209}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomWebPart\ShowLoginPart\ShowLoginPart.webpart" />
+    <None Include="CustomWebPart\WaterImageWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7b756793-bd56-494c-8fb8-f0da3ebce22f}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomWebPart\WaterImageWebPart\WaterImageWebPart.webpart" />
+    <None Include="EventHandlers\DocDelEvent\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{670b7b0e-9ba7-4ae2-8622-3ee2acadef62}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\HeraDMSFeature\HeraDMSFeature.feature">
+      <FeatureId>{f6239d40-3b98-4eda-8345-d836b03941de}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\JS\Lib\LocalCSSetup.msi" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{910811fc-2e89-4042-978b-8594484d8d08}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{3ffef69c-8391-4574-afe0-7d70310ba7f6}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Ribbon\AddWaterImageRibbon\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2ba2574b-6227-4e0a-9b2d-c8ae073e12eb}</SharePointProjectItemId>
+    </None>
+    <None Include="Ribbon\AuditLogRibbon\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9017d098-3e08-44f1-9585-d4bbc8472424}</SharePointProjectItemId>
+    </None>
+    <None Include="Ribbon\CommentRibbon\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{75b99d37-8c9a-4b7f-9516-383df4f5f143}</SharePointProjectItemId>
+    </None>
+    <None Include="Ribbon\DownloadZipRibbon\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{456309de-ffc9-4aac-b242-99313e2c6859}</SharePointProjectItemId>
+    </None>
+    <None Include="Ribbon\MyFavoritesRibbon\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9562eedf-df52-47bd-a29e-0ca895d5d740}</SharePointProjectItemId>
+    </None>
+    <EntityDeploy Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HeraDMS.BLL\HeraDMS.BLL.csproj">
+      <Project>{3B5A56CB-4F18-47B5-857C-3D38D8B34650}</Project>
+      <Name>HeraDMS.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HeraDMS.Core\HeraDMS.Core.csproj">
+      <Project>{A549C966-BD95-41A0-8814-597CC5422C67}</Project>
+      <Name>HeraDMS.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HeraDMS.DAL\HeraDMS.DAL.csproj">
+      <Project>{EFF8FA73-0747-40A3-AA25-C91206973B71}</Project>
+      <Name>HeraDMS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HeraDMS.Entity\HeraDMS.Entity.csproj">
+      <Project>{8466D999-E06E-4C84-921F-EF74A3AFFE31}</Project>
+      <Name>HeraDMS.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HeraDMS.ServerControls\HeraDMS.ServerControls.csproj">
+      <Project>{BDFC2428-A80C-4167-BE94-4B7F2FDE5628}</Project>
+      <Name>HeraDMS.ServerControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CustomWebPart\CommentRankingWebPart\CommentRankingWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CustomWebPart\CommentRankingWebPart\Elements.xml" />
+    <Content Include="CustomWebPart\FavritesRankingWebPart\Elements.xml" />
+    <Content Include="CustomWebPart\FavritesRankingWebPart\FavritesRankingWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CustomWebPart\InitializeDocMenuWebPart\Elements.xml" />
+    <Content Include="CustomWebPart\InitializeDocMenuWebPart\InitializeDocMenuWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CustomWebPart\MyFavoritesWebPart\Elements.xml" />
+    <Content Include="CustomWebPart\MyFavoritesWebPart\MyFavoritesWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CustomWebPart\ShowLoginPart\Elements.xml" />
+    <Content Include="CustomWebPart\ShowLoginPart\ShowLoginPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CustomWebPart\WaterImageWebPart\Elements.xml" />
+    <Content Include="CustomWebPart\WaterImageWebPart\WaterImageWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="EventHandlers\DocDelEvent\Elements.xml" />
+    <Content Include="Features\HeraDMSFeature\HeraDMSFeature.Template.xml">
+      <DependentUpon>HeraDMSFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\Common\DownloadFile.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\HeraDMSSite\Images\DownloadZipRibbon\zip_16x16.png" />
+    <Content Include="Layouts\HeraDMSSite\Images\DownloadZipRibbon\zip_32x32.png" />
+    <Content Include="Layouts\HeraDMSSite\JS\DownloadZip.js" />
+    <Content Include="Layouts\HeraDMSSite\Pages\DownloadZip.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\JS\iColorPicker.js" />
+    <Content Include="Layouts\JS\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Layouts\JS\jquery-1.4.1.js" />
+    <Content Include="Layouts\JS\jquery-1.4.1.min.js" />
+    <Content Include="Layouts\JS\Lib\ActiveDemo.cab" />
+    <Content Include="Layouts\JS\Lib\setup.exe" />
+    <Content Include="Layouts\Pages\AddWaterImage\AddWaterImage.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\Pages\AuditLog\AuditLogList.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\Pages\Comment\CommentList.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\Pages\MyFavorites\MyFavoritesOperation.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\HeraDMSSite\Images\ApplyDocumentPrefixRibbon\16x16Placeholder.png" />
+    <Content Include="Layouts\HeraDMSSite\Images\ApplyDocumentPrefixRibbon\32x32Placeholder.png" />
+    <Content Include="Layouts\HeraDMSSite\Images\ApplyDocumentPrefixRibbon\CPT_FeatureIcon.gif" />
+    <Content Include="Ribbon\AddWaterImageRibbon\Elements.xml" />
+    <Content Include="Ribbon\AuditLogRibbon\Elements.xml" />
+    <Content Include="Ribbon\CommentRibbon\Elements.xml" />
+    <Content Include="Ribbon\DownloadZipRibbon\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Ribbon\MyFavoritesRibbon\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

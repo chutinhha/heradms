@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="WaterImageWebPart" List="113" Url="_catalogs/wp">
+    <File Path="WaterImageWebPart\WaterImageWebPart.webpart" Url="WaterImageWebPart.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="CustomWebPart" />
+    </File>
+  </Module>
+</Elements>

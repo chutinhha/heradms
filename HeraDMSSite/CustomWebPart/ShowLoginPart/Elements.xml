@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="ShowLoginPart" List="113" Url="_catalogs/wp">
+    <File Path="ShowLoginPart\ShowLoginPart.webpart" Url="ShowLoginPart.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="CustomWebPart" />
+    </File>
+  </Module>
+</Elements>

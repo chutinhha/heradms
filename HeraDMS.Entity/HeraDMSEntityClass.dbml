@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WSS_Content_953fdefa4473447ea7f6b25a81824347" Class="HeraDMSEntityClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=WSS_Content_953fdefa4473447ea7f6b25a81824347;Integrated Security=True" SettingsObjectName="HeraDMS.Entity.Properties.Settings" SettingsPropertyName="WSS_Content_953fdefa4473447ea7f6b25a81824347ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DM_Comment" Member="DM_Comments">
+    <Type Name="DM_Comment">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SiteId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ListId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ItemId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Creator" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatorName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Modifier" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifierName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ModifyTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DM_MyFavorites" Member="DM_MyFavorites">
+    <Type Name="DM_MyFavorite">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SiteId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ListId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ItemId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DocTitle" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DocUrl" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Creator" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatorName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Modifier" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifierName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ModifyTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
