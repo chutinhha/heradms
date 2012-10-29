@@ -7,7 +7,7 @@ using System.Data;
 using System.Collections;
 using System.Configuration;
 
-namespace HeraDMS.Core
+namespace HeraDMS.Core 
 {
     /// <summary>
     /// Summary description for SqlHelper
