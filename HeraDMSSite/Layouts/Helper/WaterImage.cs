@@ -184,40 +184,40 @@ public class WaterImageManage
                 case ImagePosition.BottomMiddle:
                     xPosOfWm = (phWidth - wmWidth) / 2;
                     //yPosOfWm = phHeight - wmHeight - 10;
-                    yPosOfWm = phHeight - wmHeight;
+                    yPosOfWm = phHeight - wmHeight-2;
                     break;
                 case ImagePosition.Center:
                     xPosOfWm = (phWidth - wmWidth) / 2;
                     yPosOfWm = (phHeight - wmHeight) / 2;
                     break;
                 case ImagePosition.LeftBottom:
-                    xPosOfWm = 10;
+                    xPosOfWm = 2;
                     //yPosOfWm = phHeight - wmHeight - 10;
-                    yPosOfWm = phHeight - wmHeight;
+                    yPosOfWm = phHeight - wmHeight-2;
                     break;
                 case ImagePosition.LeftTop:
-                    xPosOfWm = 10;
-                    yPosOfWm = 10;
+                    xPosOfWm = 2;
+                    yPosOfWm = 2;
                     break;
                 case ImagePosition.RightTop:
                     //xPosOfWm = phWidth - wmWidth - 10;
-                    xPosOfWm = phWidth - wmWidth;
-                    yPosOfWm = 10;
+                    xPosOfWm = phWidth - wmWidth-2;
+                    yPosOfWm = 2;
                     break;
                 case ImagePosition.RigthBottom:
                     //xPosOfWm = phWidth - wmWidth - 10;
                     //yPosOfWm = phHeight - wmHeight - 10;
-                    xPosOfWm = phWidth - wmWidth;
-                    yPosOfWm = phHeight - wmHeight;
+                    xPosOfWm = phWidth - wmWidth-2;
+                    yPosOfWm = phHeight - wmHeight-2;
                     break;
                 case ImagePosition.TopMiddle:
                     xPosOfWm = (phWidth - wmWidth) / 2;
-                    yPosOfWm = 10;
+                    yPosOfWm = 2;
                     break;
                 default:
-                    xPosOfWm = 10;
+                    xPosOfWm = 2;
                     //yPosOfWm = phHeight - wmHeight - 10;
-                    yPosOfWm = phHeight - wmHeight;
+                    yPosOfWm = phHeight - wmHeight-2;
                     break;
             }
 
@@ -343,38 +343,38 @@ public class WaterImageManage
             switch (position)
             {
                 case ImagePosition.BottomMiddle:
-                    xPosOfWm = phWidth / 2;
-                    yPosOfWm = phHeight - wmHeight - 10;
+                    xPosOfWm = phWidth/ 2;
+                    yPosOfWm = phHeight - wmHeight;
                     break;
                 case ImagePosition.Center:
-                    xPosOfWm = phWidth / 2;
-                    yPosOfWm = phHeight / 2;
+                    xPosOfWm = (phWidth - wmWidth) / 2;
+                    yPosOfWm = (phHeight - wmHeight) / 2;
                     break;
                 case ImagePosition.LeftBottom:
-                    xPosOfWm = wmWidth;
-                    yPosOfWm = phHeight - wmHeight - 10;
+                    xPosOfWm = wmWidth/2;
+                    yPosOfWm = phHeight - wmHeight;
                     break;
                 case ImagePosition.LeftTop:
                     xPosOfWm = wmWidth / 2;
-                    yPosOfWm = wmHeight / 2;
+                    yPosOfWm = 0;
                     break;
                 case ImagePosition.RightTop:
-                    xPosOfWm = phWidth - wmWidth - 10;
-                    yPosOfWm = wmHeight;
+                    xPosOfWm = phWidth - wmWidth/2;
+                    yPosOfWm =0;
                     break;
                 case ImagePosition.RigthBottom:
-                    xPosOfWm = phWidth - wmWidth - 10;
-                    yPosOfWm = phHeight - wmHeight - 10;
+                    xPosOfWm = phWidth - wmWidth/2;
+                    yPosOfWm = phHeight - wmHeight;
                     break;
                 case ImagePosition.TopMiddle:
                     xPosOfWm = phWidth / 2;
-                    yPosOfWm = wmWidth;
+                    yPosOfWm = 0;
                     break;
                 default:
                     xPosOfWm = wmWidth;
-                    yPosOfWm = phHeight - wmHeight - 10;
+                    yPosOfWm = phHeight - wmHeight - 2;
                     break;
-            }
+            }  
 
             //封装文本布局信息（如对齐、文字方向和 Tab 停靠位），显示操作（如省略号插入和国家标准 (National) 数字替换）和 OpenType 功能。   
             StringFormat StrFormat = new StringFormat();
@@ -392,7 +392,7 @@ public class WaterImageManage
             grPhoto.DrawString(waterWords,                                    //string of text   
                                        crFont,                                         //font   
                                        semiTransBrush2,                            //Brush   
-                                       new PointF(xPosOfWm + 1, yPosOfWm + 1),  //Position   
+                                       new PointF(xPosOfWm, yPosOfWm),  //Position   
                                        StrFormat);
 
             //从四个 ARGB 分量（alpha、红色、绿色和蓝色）值创建 Color 结构，这里设置透明度为153   
