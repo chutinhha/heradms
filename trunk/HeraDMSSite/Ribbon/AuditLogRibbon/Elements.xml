@@ -17,7 +17,7 @@
       <CommandUIHandlers>
         <CommandUIHandler
           Command="MyButtonCommand"
-          CommandAction="javascript:var options = SP.UI.$create_DialogOptions();options.title = '审计日志';options.width = 800;options.height = 450;options.url = '/_layouts/Pages/AuditLog/AuditLogList.aspx?listID='+ SP.ListOperation.Selection.getSelectedList();
+          CommandAction="javascript:var options = SP.UI.$create_DialogOptions();options.title = '审计日志';options.width = 800;options.height = 450;options.url = '/_layouts/HeraDMSSite/Pages/AuditLog/AuditLogList.aspx?listID='+ SP.ListOperation.Selection.getSelectedList();
         SP.UI.ModalDialog.showModalDialog(options);" />
       </CommandUIHandlers>
     </CommandUIExtension>

@@ -29,7 +29,7 @@
                         options.title = '添加图片水印';
                         options.width = 850;
                         options.height = 550;
-                        options.url = '/_layouts/Pages/AddWaterImage/AddWaterImage.aspx?listID='+ SP.ListOperation.Selection.getSelectedList()+'&amp;selectedItemIds='+selectedItemIds;
+                        options.url = '/_layouts/HeraDMSSite/Pages/AddWaterImage/AddWaterImage.aspx?listID='+ SP.ListOperation.Selection.getSelectedList()+'&amp;selectedItemIds='+selectedItemIds;
         SP.UI.ModalDialog.showModalDialog(options);"
            EnabledScript="javascript:
                             function checkIsEnabled(){
