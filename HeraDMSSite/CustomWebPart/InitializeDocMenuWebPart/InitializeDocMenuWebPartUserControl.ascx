@@ -86,7 +86,7 @@
         options.title = "审计日志";
         options.width = 800;
         options.height = 450;
-        options.url = "/_layouts/Pages/AuditLog/AuditLogList.aspx?itemID=" + currentItemID + "&listID=" + listID;
+        options.url = "/_layouts/HeraDMSSite/Pages/AuditLog/AuditLogList.aspx?itemID=" + currentItemID + "&listID=" + listID;
         SP.UI.ModalDialog.showModalDialog(options);
     }
 
@@ -97,7 +97,7 @@
         options.title = "评论";
         options.width = 800;
         options.height = 450;
-        options.url = "/_layouts/Pages/Comment/CommentList.aspx?itemID=" + currentItemID + "&listID=" + listID;
+        options.url = "/_layouts/HeraDMSSite/Pages/Comment/CommentList.aspx?itemID=" + currentItemID + "&listID=" + listID;
         SP.UI.ModalDialog.showModalDialog(options);
     }
 

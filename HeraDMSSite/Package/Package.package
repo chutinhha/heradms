@@ -6,9 +6,9 @@
     <projectOutputAssembly location="HeraDMS.Core.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\HeraDMS.Core\HeraDMS.Core.csproj" />
     <projectOutputAssembly location="HeraDMS.DAL.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\HeraDMS.DAL\HeraDMS.DAL.csproj" />
     <projectOutputAssembly location="HeraDMS.BLL.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\HeraDMS.BLL\HeraDMS.BLL.csproj" />
-    <customAssembly location="Ionic.Zip.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\lib\NPOI\.net 2.0\Ionic.Zip.dll" />
-    <customAssembly location="NPOI.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\lib\NPOI\.net 2.0\NPOI.dll" />
-    <customAssembly location="ICSharpCode.SharpZipLib.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\lib\SharpZipLib\net-20\ICSharpCode.SharpZipLib.dll" />
+    <customAssembly location="Ionic.Zip.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="lib\NPOI\.net 2.0\Ionic.Zip.dll" />
+    <customAssembly location="NPOI.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="lib\NPOI\.net 2.0\NPOI.dll" />
+    <customAssembly location="ICSharpCode.SharpZipLib.dll" deploymentTarget="WebApplication" sourcePath="lib\SharpZipLib\net-20\ICSharpCode.SharpZipLib.dll" />
   </assemblies>
   <features>
     <featureReference itemId="f6239d40-3b98-4eda-8345-d836b03941de" />

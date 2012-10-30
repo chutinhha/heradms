@@ -76,7 +76,7 @@
                             for (selectedItemIndex in selectedItems){
                               selectedItemIds =selectedItems[selectedItemIndex].id;
                             }
-                          var options = SP.UI.$create_DialogOptions();options.title = '评论';options.width = 800;options.height = 450;options.url = '/_layouts/Pages/Comment/CommentList.aspx?itemID=' + selectedItemIds + '&amp;listID=' + SP.ListOperation.Selection.getSelectedList();
+                          var options = SP.UI.$create_DialogOptions();options.title = '评论';options.width = 800;options.height = 450;options.url = '/_layouts/HeraDMSSite/Pages/Comment/CommentList.aspx?itemID=' + selectedItemIds + '&amp;listID=' + SP.ListOperation.Selection.getSelectedList();
         SP.UI.ModalDialog.showModalDialog(options);"
                           EnabledScript="javascript:
                             function checkIsEnabled(){

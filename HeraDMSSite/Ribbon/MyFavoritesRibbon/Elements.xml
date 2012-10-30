@@ -78,7 +78,7 @@
                             }
                             //alert(selectedItemIds);
                             $.get(
-                                        '/_layouts/Pages/MyFavorites/MyFavoritesOperation.aspx',{
+                                        '/_layouts/HeraDMSSite/Pages/MyFavorites/MyFavoritesOperation.aspx',{
                                             listid: SP.ListOperation.Selection.getSelectedList(),
                                             selectedItems: selectedItemIds,
                                         },function(data,state){
@@ -101,14 +101,14 @@
   </CustomAction>
   <CustomAction Id="Ribbon.Documents.Actions.Scripts"
                 Location="ScriptLink"
-                ScriptSrc="/_layouts/JS/jquery-1.4.1-vsdoc.js"
+                ScriptSrc="/_layouts/HeraDMSSite/JS/jquery-1.4.1-vsdoc.js"
                 />
   <CustomAction Id="Ribbon.Documents.Actions.Scripts"
               Location="ScriptLink"
-              ScriptSrc="/_layouts/JS/jquery-1.4.1.js"
+              ScriptSrc="/_layouts/HeraDMSSite/JS/jquery-1.4.1.js"
                 />
   <CustomAction Id="Ribbon.Documents.Actions.Scripts"
              Location="ScriptLink"
-             ScriptSrc="/_layouts/JS/jquery-1.4.1.min.js"
+             ScriptSrc="/_layouts/HeraDMSSite/JS/jquery-1.4.1.min.js"
                 />
 </Elements>

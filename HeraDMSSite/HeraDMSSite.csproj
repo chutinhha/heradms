@@ -145,32 +145,32 @@
     <Compile Include="Layouts\HeraDMSSite\Pages\DownloadZip.aspx.designer.cs">
       <DependentUpon>DownloadZip.aspx.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layouts\Pages\AddWaterImage\AddWaterImage.aspx.cs">
+    <Compile Include="Layouts\HeraDMSSite\Pages\AddWaterImage\AddWaterImage.aspx.cs">
       <DependentUpon>AddWaterImage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layouts\Pages\AddWaterImage\AddWaterImage.aspx.designer.cs">
+    <Compile Include="Layouts\HeraDMSSite\Pages\AddWaterImage\AddWaterImage.aspx.designer.cs">
       <DependentUpon>AddWaterImage.aspx.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layouts\Pages\AuditLog\AuditLogList.aspx.cs">
+    <Compile Include="Layouts\HeraDMSSite\Pages\AuditLog\AuditLogList.aspx.cs">
       <DependentUpon>AuditLogList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layouts\Pages\AuditLog\AuditLogList.aspx.designer.cs">
+    <Compile Include="Layouts\HeraDMSSite\Pages\AuditLog\AuditLogList.aspx.designer.cs">
       <DependentUpon>AuditLogList.aspx.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layouts\Pages\Comment\CommentList.aspx.cs">
+    <Compile Include="Layouts\HeraDMSSite\Pages\Comment\CommentList.aspx.cs">
       <DependentUpon>CommentList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layouts\Pages\Comment\CommentList.aspx.designer.cs">
+    <Compile Include="Layouts\HeraDMSSite\Pages\Comment\CommentList.aspx.designer.cs">
       <DependentUpon>CommentList.aspx.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layouts\Pages\MyFavorites\MyFavoritesOperation.aspx.cs">
+    <Compile Include="Layouts\HeraDMSSite\Pages\MyFavorites\MyFavoritesOperation.aspx.cs">
       <DependentUpon>MyFavoritesOperation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layouts\Pages\MyFavorites\MyFavoritesOperation.aspx.designer.cs">
+    <Compile Include="Layouts\HeraDMSSite\Pages\MyFavorites\MyFavoritesOperation.aspx.designer.cs">
       <DependentUpon>MyFavoritesOperation.aspx.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -208,7 +208,6 @@
       <FeatureId>{f6239d40-3b98-4eda-8345-d836b03941de}</FeatureId>
     </None>
     <None Include="key.snk" />
-    <None Include="Layouts\JS\Lib\LocalCSSetup.msi" />
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{910811fc-2e89-4042-978b-8594484d8d08}</SharePointProjectItemId>
     </None>
@@ -298,27 +297,57 @@
     <Content Include="Layouts\HeraDMSSite\Pages\DownloadZip.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
-    <Content Include="Layouts\JS\iColorPicker.js" />
-    <Content Include="Layouts\JS\jquery-1.4.1-vsdoc.js" />
-    <Content Include="Layouts\JS\jquery-1.4.1.js" />
-    <Content Include="Layouts\JS\jquery-1.4.1.min.js" />
-    <Content Include="Layouts\JS\Lib\ActiveDemo.cab" />
-    <Content Include="Layouts\JS\Lib\setup.exe" />
-    <Content Include="Layouts\Pages\AddWaterImage\AddWaterImage.aspx">
+    <Content Include="Layouts\HeraDMSSite\JS\iColorPicker.js" />
+    <Content Include="Layouts\HeraDMSSite\JS\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Layouts\HeraDMSSite\JS\jquery-1.4.1.js" />
+    <Content Include="Layouts\HeraDMSSite\JS\jquery-1.4.1.min.js" />
+    <Content Include="Layouts\HeraDMSSite\Pages\AddWaterImage\AddWaterImage.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
-    <Content Include="Layouts\Pages\AuditLog\AuditLogList.aspx">
+    <Content Include="Layouts\HeraDMSSite\Pages\AuditLog\AuditLogList.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
-    <Content Include="Layouts\Pages\Comment\CommentList.aspx">
+    <Content Include="Layouts\HeraDMSSite\Pages\Comment\CommentList.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
-    <Content Include="Layouts\Pages\MyFavorites\MyFavoritesOperation.aspx">
+    <Content Include="Layouts\HeraDMSSite\Pages\MyFavorites\MyFavoritesOperation.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Layouts\HeraDMSSite\Images\ApplyDocumentPrefixRibbon\16x16Placeholder.png" />
     <Content Include="Layouts\HeraDMSSite\Images\ApplyDocumentPrefixRibbon\32x32Placeholder.png" />
     <Content Include="Layouts\HeraDMSSite\Images\ApplyDocumentPrefixRibbon\CPT_FeatureIcon.gif" />
+    <Content Include="lib\AjaxControlToolkit\AjaxControlToolkit.dll" />
+    <Content Include="lib\AjaxControlToolkit\AjaxControlToolkit.pdb" />
+    <Content Include="lib\AjaxControlToolkit\ar\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\AjaxControlToolkit\cs\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\AjaxControlToolkit\de\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\AjaxControlToolkit\es\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\AjaxControlToolkit\fr\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\AjaxControlToolkit\he\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\AjaxControlToolkit\hi\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\AjaxControlToolkit\it\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\AjaxControlToolkit\ja\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\AjaxControlToolkit\ko\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\AjaxControlToolkit\LICENSE.txt" />
+    <Content Include="lib\AjaxControlToolkit\nl\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\AjaxControlToolkit\pt\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\AjaxControlToolkit\ReadMe.html" />
+    <Content Include="lib\AjaxControlToolkit\ru\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\AjaxControlToolkit\SanitizerProviders\SanitizerProviders.dll" />
+    <Content Include="lib\AjaxControlToolkit\tr-TR\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\AjaxControlToolkit\zh-CHS\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\AjaxControlToolkit\zh-CHT\AjaxControlToolkit.resources.dll" />
+    <Content Include="lib\ColorPicker.dll" />
+    <Content Include="lib\Microsoft.Office.SecureStoreService.dll" />
+    <Content Include="lib\Microsoft.Office.SecureStoreService引用路径.txt" />
+    <Content Include="lib\NPOI\.net 2.0\Ionic.Zip.dll" />
+    <Content Include="lib\NPOI\.net 2.0\NPOI.dll" />
+    <Content Include="lib\NPOI\Ionic_Utils_Zip_license.txt" />
+    <Content Include="lib\NPOI\License.txt" />
+    <Content Include="lib\NPOI\Read Me.txt" />
+    <Content Include="lib\NPOI\Release Notes.txt" />
+    <Content Include="lib\SharpZipLib\net-20\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="lib\SharpZipLib\netcf-20\ICSharpCode.SharpZipLib.dll" />
     <Content Include="Ribbon\AddWaterImageRibbon\Elements.xml" />
     <Content Include="Ribbon\AuditLogRibbon\Elements.xml" />
     <Content Include="Ribbon\CommentRibbon\Elements.xml" />

@@ -34,3 +34,15 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: System.Web.UI.WebResource("HeraDMS.ServerControls.ColorPicker.Images.SliderHandle.gif", "img/gif")]
+[assembly: System.Web.UI.WebResource("HeraDMS.ServerControls.ColorPicker.Images.TabCenterActive.gif", "img/gif")]
+[assembly: System.Web.UI.WebResource("HeraDMS.ServerControls.ColorPicker.Images.TabLeftActive.gif", "img/gif")]
+[assembly: System.Web.UI.WebResource("HeraDMS.ServerControls.ColorPicker.Images.TabLeftInactive.gif", "img/gif")]
+[assembly: System.Web.UI.WebResource("HeraDMS.ServerControls.ColorPicker.Images.TabRightActive.gif", "img/gif")]
+[assembly: System.Web.UI.WebResource("HeraDMS.ServerControls.ColorPicker.Images.TabRightInactive.gif", "img/gif")]
+[assembly: System.Web.UI.WebResource("HeraDMS.ServerControls.ColorPicker.Images.ColorPickerIcon.jpg", "img/jpeg")]
+
+
+[assembly: System.Web.UI.WebResource("HeraDMS.ServerControls.ColorPicker.ColorPicker.css", "text/css")]
+[assembly: System.Web.UI.WebResource("HeraDMS.ServerControls.PagingControler.Pager.css", "text/css")]
+[assembly: System.Web.UI.WebResource("HeraDMS.ServerControls.ColorPicker.ColorPicker.js", "text/js")]

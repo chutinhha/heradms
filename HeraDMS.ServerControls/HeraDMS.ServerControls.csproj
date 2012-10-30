@@ -59,16 +59,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ColorPicker\ColorPicker.css" />
-    <Content Include="ColorPicker\ColorPicker.js" />
-    <Content Include="ColorPicker\Images\ColorPickerIcon.jpg" />
-    <Content Include="ColorPicker\Images\SliderHandle.gif" />
-    <Content Include="ColorPicker\Images\TabCenterActive.gif" />
-    <Content Include="ColorPicker\Images\TabLeftActive.gif" />
-    <Content Include="ColorPicker\Images\TabLeftInactive.gif" />
-    <Content Include="ColorPicker\Images\TabRightActive.gif" />
-    <Content Include="ColorPicker\Images\TabRightInactive.gif" />
-    <Content Include="PagingControler\Pager.css" />
+    <EmbeddedResource Include="ColorPicker\ColorPicker.css" />
+    <EmbeddedResource Include="ColorPicker\ColorPicker.js" />
+    <EmbeddedResource Include="ColorPicker\Images\ColorPickerIcon.jpg" />
+    <EmbeddedResource Include="ColorPicker\Images\SliderHandle.gif" />
+    <EmbeddedResource Include="ColorPicker\Images\TabCenterActive.gif" />
+    <EmbeddedResource Include="ColorPicker\Images\TabLeftActive.gif" />
+    <EmbeddedResource Include="ColorPicker\Images\TabLeftInactive.gif" />
+    <EmbeddedResource Include="ColorPicker\Images\TabRightActive.gif" />
+    <EmbeddedResource Include="ColorPicker\Images\TabRightInactive.gif" />
+    <EmbeddedResource Include="PagingControler\Pager.css" />
   </ItemGroup>
   <ItemGroup>
     <None Include="key.snk" />
