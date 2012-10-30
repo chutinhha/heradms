@@ -256,7 +256,7 @@ namespace HeraDMS.Layouts.HeraDMSSite.Pages.AddWaterImage
                     }
                     Directory.CreateDirectory(filePath);
                     filePath = filePath + "\\" + Path.GetFileName(ImgPreview.ImageUrl);
-                    if (WaterImageManage.DrawImage(str, ImgPicture.ImageUrl, float.Parse(ddlAlpha.SelectedValue), float.Parse(ddlImgSize.SelectedValue), WaterImageManage.GetPosition(ddlPosition.SelectedValue), filePath))
+                    if (WaterImageManage.DrawImage(str, waterImageUrl, float.Parse(ddlAlpha.SelectedValue), float.Parse(ddlImgSize.SelectedValue), WaterImageManage.GetPosition(ddlPosition.SelectedValue), filePath))
                     {
                         this.ImgPreview.ImageUrl = "/UploadFile/" + gd.ToString() + "/" + Path.GetFileName(ImgPreview.ImageUrl);
                     }
@@ -421,7 +421,7 @@ namespace HeraDMS.Layouts.HeraDMSSite.Pages.AddWaterImage
                                 if (rblType.SelectedValue.Equals("Y"))
                                 {
                                     //调用给图片添加水印图片方法
-                                    if (WaterImageManage.DrawImage(str, ImgPicture.ImageUrl, float.Parse(ddlAlpha.SelectedValue), float.Parse(ddlImgSize.SelectedValue), WaterImageManage.GetPosition(ddlPosition.SelectedValue), filePath))
+                                    if (WaterImageManage.DrawImage(str, ImgPicture.Attributes["WaterPath"], float.Parse(ddlAlpha.SelectedValue), float.Parse(ddlImgSize.SelectedValue), WaterImageManage.GetPosition(ddlPosition.SelectedValue), filePath))
                                     {
                                         WaterImageEntity entity = new WaterImageEntity();
                                         entity.ItemId = i;
