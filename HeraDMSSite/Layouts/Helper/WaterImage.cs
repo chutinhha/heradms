@@ -84,7 +84,7 @@ public class WaterImageManage
             // 封装 GDI+ 位图，此位图由图形图像及其属性的像素数据组成。   
             //   
             Bitmap bmPhoto = new Bitmap(phWidth, phHeight, PixelFormat.Format24bppRgb);
-
+            bmPhoto.MakeTransparent();
             //   
             // 设定分辨率   
             //    
@@ -131,6 +131,7 @@ public class WaterImageManage
             // 与底图一样，我们需要一个位图来装载水印图片。并设定其分辨率   
             //   
             Bitmap bmWatermark = new Bitmap(bmPhoto);
+            bmWatermark.MakeTransparent();
             bmWatermark.SetResolution(imgPhoto.HorizontalResolution, imgPhoto.VerticalResolution);
 
             //   
@@ -301,7 +302,7 @@ public class WaterImageManage
             //   
             //建立一个bitmap，和我们需要加水印的图片一样大小   
             Bitmap bmPhoto = new Bitmap(sourcePicture);
-
+            bmPhoto.MakeTransparent();
             //SetResolution：设置此 Bitmap 的分辨率   
             //这里直接将我们需要添加水印的图片的分辨率赋给了bitmap   
             bmPhoto.SetResolution(imgPhoto.HorizontalResolution, imgPhoto.VerticalResolution);
@@ -385,8 +386,8 @@ public class WaterImageManage
             //SolidBrush:定义单色画笔。画笔用于填充图形形状，如矩形、椭圆、扇形、多边形和封闭路径。   
             //这个画笔为描绘阴影的画笔，呈灰色   
             int m_alpha = Convert.ToInt32(255 * alpha);
-            SolidBrush semiTransBrush2 = new SolidBrush(Color.FromArgb(m_alpha,forColor.R, forColor.G, forColor.B));
-
+            SolidBrush semiTransBrush2 = new SolidBrush(Color.FromArgb(m_alpha, forColor.R, forColor.G, forColor.B));
+            //SolidBrush semiTransBrush2 = new SolidBrush(Color.FromArgb(m_alpha,0, 0, 0));
             //描绘文字信息，这个图层向右和向下偏移一个像素，表示阴影效果   
             //DrawString 在指定矩形并且用指定的 Brush 和 Font 对象绘制指定的文本字符串。   
             grPhoto.DrawString(waterWords,                                    //string of text   
@@ -398,10 +399,10 @@ public class WaterImageManage
             //从四个 ARGB 分量（alpha、红色、绿色和蓝色）值创建 Color 结构，这里设置透明度为153   
             //这个画笔为描绘正式文字的笔刷，呈白色   
             //SolidBrush semiTransBrush = new SolidBrush(forColor);
-            
-            //SolidBrush semiTransBrush = new SolidBrush(Color.FromArgb(153, 255, 255, 255)); 
+
+            //SolidBrush semiTransBrush = new SolidBrush(Color.FromArgb(153, forColor.R, forColor.G, forColor.B));
             ////第二次绘制这个图形，建立在第一次描绘的基础上 
-  
+
             ////update by wp
             //grPhoto.DrawString(waterWords,                 //string of text   
             //                           crFont,                                   //font   
